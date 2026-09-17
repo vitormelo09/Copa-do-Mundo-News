@@ -1,23 +1,16 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #07111f;
-    color: #ffffff;
-  }
-  
-  .topbar {
-    height: 64px;
-  
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-    padding: 0 48px;
-  
-    background-color: #0b1322;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #07111f;
+  color: #ffffff;
+}

@@ -1,34 +1,11 @@
-import './style.css'
+import './styles/global.css'
+import { home } from './pages/home'
+import { startCountdown } from './scripts/countdown'
 
 const app = document.querySelector<HTMLDivElement>('#app')
 
-//
 if (app) {
-  app.innerHTML = `
-    <header class="topbar">
-      <div class="brand">
-        <div class="brand-icon">⚽</div>
+  app.innerHTML = home()
 
-        <div class="brand-name">
-          COPA DO MUNDO NEWS
-        </div>
-
-        <span class="year-badge">2027</span>
-      </div>
-
-      <nav class="menu">
-        <a href="#" class="active">Início</a>
-        <a href="#">Partidas</a>
-        <a href="#">Seleções</a>
-        <a href="#">Jogadoras</a>
-        <a href="#">Notícias</a>
-        <a href="#">Estádios</a>
-      </nav>
-
-      <div class="auth-actions">
-        <a href="#" class="login-link">Entrar</a>
-        <a href="#" class="create-account">Criar conta</a>
-      </div>
-    </header>
-  `
+  startCountdown()
 }
